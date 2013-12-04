@@ -94,8 +94,12 @@
 		 			  {% if item.menu != null %}
 	                      <ul>
 	                      {% for subitem in item.menu %}
-						<li><a href="{{subitem.link}}">{{subitem.label}}</a>
-	                        {% if subitem.submenu != null %}
+						<li><a href="{{subitem.link}}">{{subitem.label}}
+  			 			   {% if subitem.submenu != null %}
+  						     <b class="caret"></b>
+  			 			   {% endif %}
+						    </a>
+	                       {% if subitem.submenu != null %}
 	                          <ul>
 	                            {% for subsubitem in subitem.submenu %}
 	                              <li><a href="{{subsubitem.link}}">{{subsubitem.label}}</a></li>
