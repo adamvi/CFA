@@ -9,7 +9,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : XX State SGP Analyses
+title : Client State SGP Analyses
 tagline: Resources and Documentation
 author :
   name : Center For Assessment
@@ -67,7 +67,7 @@ JB :
   #   - Only the following values are falsy: ["", null, false]
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
-  # BASE_PATH : http://centerforassessment.github.io/XX_State
+  # BASE_PATH : http://centerforassessment.github.io/Client_State
   BASE_PATH : http://centerforassessment.github.io/CFA
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
@@ -96,7 +96,7 @@ JB :
   #  comments :
   #    provider : disqus
   #    disqus :
-  #      short_name : XX_State
+  #      short_name : Client_State
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -195,7 +195,7 @@ navbar:
         label: Center for Assessment (NCIEA)
         link: http://www.nciea.org/
       - 
-        label: XX State Office of Education
+        label: Client State Office of Education
         link: 404.html
 
   -
