@@ -811,7 +811,7 @@ ol ul {
 }
 
 li {
-  padding: 10px;
+  padding: 5px;
   line-height: 20px;
 }
 
@@ -961,7 +961,7 @@ code {
   color: #d14;
   white-space: nowrap;
   background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
+  /*border: 1px solid #e1e1e8; removed box 1/22/14 - looks better for inline code.*/
 }
 
 pre {
