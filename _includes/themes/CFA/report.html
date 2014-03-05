@@ -34,6 +34,7 @@
     <script src='{{ ASSET_PATH }}/js/nv.d3.js' type='text/javascript'></script>
     <script src='{{ ASSET_PATH }}/js/fisheye.js' type='text/javascript'></script>
 
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
             tex2jax: {
@@ -47,11 +48,16 @@
 			   equationNumbers: {
 				   autoNumber: "all"
 			   },
-			   TagIndent: "100px"
-		   }
+			   TagIndent: "100px",
+			   style: {
+				   "font-size": 100,
+				   "color":       "black"
+				   // add any additional CSS styles that you want
+				   //  (be sure there is no extra comma at the end of the last item)
+			   }
+		   },
 	   });
     </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 	
 	<script type="text/javascript">var tableNum = 1;</script>
 	<script type="text/javascript">var figNum = 1;</script>
@@ -94,12 +100,8 @@
 		 			  {% if item.menu != null %}
 	                      <ul>
 	                      {% for subitem in item.menu %}
-						<li><a href="{{subitem.link}}">{{subitem.label}}
-  			 			   {% if subitem.submenu != null %}
-  						     <b class="caret"></b>
-  			 			   {% endif %}
-						    </a>
-	                       {% if subitem.submenu != null %}
+						<li><a href="{{subitem.link}}">{{subitem.label}}</a>
+	                        {% if subitem.submenu != null %}
 	                          <ul>
 	                            {% for subsubitem in subitem.submenu %}
 	                              <li><a href="{{subsubitem.link}}">{{subsubitem.label}}</a></li>
@@ -188,7 +190,7 @@
       </div>
 	  
       <div class="footer" style='text-align:center; margin-left: 330px; width: 920px;'>
-          <i>All contents Copyright 2013. All rights reserved. CSS adapted from Substance.io and Scott.Fortmann-Roe.com and modified.</i>
+          <i>CSS adapted from Substance.io and Scott.Fortmann-Roe.com and modified.</i>
       </div>
       
     <script src="http://code.jquery.com/jquery.js"></script>
